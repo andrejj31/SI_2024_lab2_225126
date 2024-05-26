@@ -46,7 +46,7 @@ class SILab2Test {
         // 2 Test case: FALSE (price<300) && TRUE (discount>0) && TRUE (barcode pocnuva so 0)
         // Nova cena 290*0.9 = 261, bidejki ne e ispolnet prviot uslov ( price<300 ) nema da se namali dopolnitelno sumata za 30
         // Od tuka sleduva deka 261>250 i funkcijata bi trebalo da vrati false
-        assertFalse(SILab2.checkCart(List.of(new Item("Item1", "0123456789", 300, 0.9f)), 250));
+        assertFalse(SILab2.checkCart(List.of(new Item("Item1", "0123456789", 290, 0.9f)), 250));
 
         // 3 Test case: TRUE (price>300) && FALSE (discount<=0) && TRUE (barcode pocnuva so 0)
         // Bidejki ne e ispolnet uslovot za discount cenata si ostanuva ista. Isto taka cenata ne se namaluva za 30 bidejki site
