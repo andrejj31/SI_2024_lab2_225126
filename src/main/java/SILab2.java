@@ -1,6 +1,3 @@
-package mk.ukim.finki;
-
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
 
